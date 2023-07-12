@@ -23,7 +23,7 @@ const data: CardType[] = [
     text: 'REST API for Quran.',
     tech: ['nodejs', 'express'],
     image: 'muslimify-api.png',
-    link: 'https://apiMuslimify.vercel.app',
+    link: 'https://github.com/gufronnakaaw/muslimify-api',
   },
   {
     heading: 'WeFo',

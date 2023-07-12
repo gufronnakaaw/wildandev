@@ -6,7 +6,7 @@ function Navbar() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <section className="fixed bg-gray-50 bg-opacity-60 backdrop-blur-sm left-0 top-0 w-full px-8 lg:px-80 md:px-36 py-4 flex justify-between dark:bg-black dark:text-gray-200">
+    <section className="fixed bg-gray-50 bg-opacity-60 backdrop-blur-sm left-0 top-0 w-full px-8 lg:px-80 md:px-36 py-4 flex justify-between dark:bg-black dark:text-gray-200 dark:bg-opacity-60 dark:backdrop-blur-sm">
       <div className="left">
         <Link
           href="/"

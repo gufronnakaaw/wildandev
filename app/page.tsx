@@ -11,7 +11,7 @@ function Home() {
         Hello! I&apos;m Wildan.
       </h1>
       <p className="text-black font-recursive text-md lg:text-lg dark:text-gray-200">
-        Web developer specializing in Backend Development.
+        Software engineer specializing in Backend Development.
       </p>
     </section>
   );

@@ -1,5 +1,5 @@
 import Container from '@/components/Container';
-import Card from '@/components/Card';
+import ProjectsCard from '@/components/ProjectsCard';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -50,6 +50,7 @@ const data: CardType[] = [
 
 function Projects() {
   const results = chunk<CardType>(data, 2);
+  let current: number = 0;
 
   return (
     <>
@@ -57,8 +58,11 @@ function Projects() {
         {results.map((result, index) => {
           return (
             <div key={index} className="flex flex-col 2xl:flex-row">
-              {result.map((element, index) => {
-                return <Card key={index} data={element} />;
+              {result.map((element, key) => {
+                current += 1;
+                return (
+                  <ProjectsCard key={key} data={element} index={current} />
+                );
               })}
             </div>
           );

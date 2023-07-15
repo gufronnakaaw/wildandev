@@ -1,4 +1,4 @@
-export type CardType = {
+export type ProjectsCardType = {
   heading: string;
   text: string;
   tech: string[];

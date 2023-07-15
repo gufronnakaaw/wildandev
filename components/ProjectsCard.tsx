@@ -2,15 +2,15 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import type { CardType } from '@/types';
+import type { ProjectsCardType } from '@/types';
 import { motion } from 'framer-motion';
 
-type CardProps = {
-  data: CardType;
+type ProjectsCardProps = {
+  data: ProjectsCardType;
   index: number;
 };
 
-function Card({ data, index }: CardProps) {
+function Card({ data, index }: ProjectsCardProps) {
   const { heading, text, tech, image, link } = data;
 
   return (

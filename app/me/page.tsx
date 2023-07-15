@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function Me() {
   return (
     <>
-      <Container heading="" text={null}>
+      <Container>
         <AboutMe />
       </Container>
       <Footer />

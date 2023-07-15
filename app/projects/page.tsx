@@ -3,14 +3,14 @@ import ProjectsCard from '@/components/ProjectsCard';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import type { CardType } from '@/types';
+import type { ProjectsCardType } from '@/types';
 import chunk from '@/utils/chunk';
 
 export const metadata: Metadata = {
   title: 'Projects - Gufronnaka Arif Wildan',
 };
 
-const data: CardType[] = [
+const data: ProjectsCardType[] = [
   {
     heading: 'Muslimify',
     text: 'Web based Quran App.',
@@ -49,7 +49,7 @@ const data: CardType[] = [
 ];
 
 function Projects() {
-  const results = chunk<CardType>(data, 2);
+  const results = chunk<ProjectsCardType>(data, 2);
   let current: number = 0;
 
   return (

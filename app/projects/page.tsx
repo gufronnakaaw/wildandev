@@ -54,7 +54,7 @@ function Projects() {
 
   return (
     <>
-      <Container heading="Projects" text={null}>
+      <Container heading="Projects" text="I've some fun personal projects.">
         {results.map((result, index) => {
           return (
             <div key={index} className="flex flex-col 2xl:flex-row">

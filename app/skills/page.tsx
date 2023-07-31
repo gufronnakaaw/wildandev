@@ -22,22 +22,22 @@ const data: { name: string }[] = [
     name: 'php',
   },
   {
-    name: 'codeigniter',
-  },
-  {
-    name: 'laravel',
-  },
-  {
-    name: 'express',
+    name: 'fastify',
   },
   {
     name: 'reactjs',
   },
   {
-    name: 'nginx',
+    name: 'express',
   },
   {
-    name: 'git',
+    name: 'laravel',
+  },
+  {
+    name: 'jest',
+  },
+  {
+    name: 'nginx',
   },
   {
     name: 'sql',

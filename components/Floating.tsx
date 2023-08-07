@@ -7,7 +7,7 @@ function Floating() {
 
   return (
     <section className="md:hidden py-8 max-md:fixed max-md:bottom-0 max-md:w-full">
-      <div className="flex justify-center px-5">
+      <div className="flex justify-center px-8 mx-1">
         <div className="w-full flex justify-around bg-gray-100 py-4 rounded-2xl dark:bg-gray-700 dark:text-gray-300">
           <Link href="/" className={pathname == '/' ? 'text-white' : ''}>
             <FiHome size="25"></FiHome>

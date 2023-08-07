@@ -36,17 +36,17 @@ function Card({ data, index }: ProjectsCardProps) {
               <div className="flex items-center">
                 {tech.map((element, index) => {
                   return (
-                    <>
-                      <div className="bg-white rounded-md p-2 mr-2 h-10 w-10 flex items-center justify-center dark:bg-gray-50">
-                        <Image
-                          key={index}
-                          src={`/${element}.svg`}
-                          alt={`${element} image`}
-                          width="35"
-                          height="35"
-                        ></Image>
-                      </div>
-                    </>
+                    <div
+                      key={index}
+                      className="bg-white rounded-md p-2 mr-2 h-10 w-10 flex items-center justify-center dark:bg-gray-50"
+                    >
+                      <Image
+                        src={`/${element}.svg`}
+                        alt={`${element} image`}
+                        width="35"
+                        height="35"
+                      ></Image>
+                    </div>
                   );
                 })}
               </div>

@@ -46,6 +46,13 @@ const data: ProjectsCardType[] = [
     image: 'permoment.png',
     link: 'https://permoment.wildandev.com',
   },
+  {
+    heading: 'Jujurly Backend',
+    text: 'Backend Service for Voting App',
+    tech: ['nodejs', 'fastify', 'supabase'],
+    image: 'jujurly-backend.png',
+    link: 'https://github.com/gufronnakaaw/jujurly-backend',
+  },
 ];
 
 function Projects() {

@@ -22,7 +22,7 @@ const data: ProjectsCardType[] = [
     heading: 'Muslimify API',
     text: 'REST API for Quran.',
     tech: ['nodejs', 'express'],
-    image: 'muslimify-api.png',
+    image: 'rest-api.png',
     link: 'https://github.com/gufronnakaaw/muslimify-api',
   },
   {
@@ -50,7 +50,7 @@ const data: ProjectsCardType[] = [
     heading: 'Jujurly Backend',
     text: 'Backend Service for Voting App',
     tech: ['nodejs', 'fastify', 'supabase'],
-    image: 'jujurly-backend.png',
+    image: 'rest-api.png',
     link: 'https://github.com/gufronnakaaw/jujurly-backend',
   },
 ];

@@ -76,9 +76,11 @@ function Projects() {
         })}
 
         <Link href="https://github.com/gufronnakaaw" target="_blank">
-          <button className="w-full border-2 border-gray-100 hover:border-gray-200 my-3 rounded-2xl font-outfit py-4 font-bold hover:bg-gray-100 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-600 transition dark:text-gray-200 text-lg">
-            Other Projects
-          </button>
+          <div className="mx-1">
+            <div className="w-full border-2 border-gray-100 hover:border-gray-200 my-3 rounded-2xl font-outfit py-4 font-bold hover:bg-gray-100 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-600 transition dark:text-gray-200 text-lg text-center">
+              Other Projects
+            </div>
+          </div>
         </Link>
       </Container>
       <Footer />

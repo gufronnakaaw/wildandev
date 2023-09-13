@@ -21,14 +21,14 @@ function Card({ data, index }: ProjectsCardProps) {
       transition={{ duration: 0.3, delay: index * 0.1 }}
     >
       <Link href={link} target="_blank">
-        <div className="border-2 border-gray-100 cursor-pointer hover:border-gray-200 hover:bg-gray-100 mt-4 h-48 mx-1 rounded-3xl px-8 py-6 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-500 transition">
+        <div className="border-2 border-gray-100 cursor-pointer hover:border-gray-200 hover:bg-gray-100 mt-4 h-48 mx-1 max-md:mx-0 rounded-3xl px-8 py-6 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-500 transition">
           <div className="flex justify-between h-full">
             <div className="flex flex-col justify-between">
               <div>
                 <h1 className="font-outfit font-bold text-xl flex items-center dark:text-gray-200 max-md:text-md">
                   {heading}
                 </h1>
-                <p className="font-recursive dark:text-gray-200 text-xs">
+                <p className="font-recursive dark:text-gray-200 text-[11px]">
                   {text}
                 </p>
               </div>
@@ -38,14 +38,14 @@ function Card({ data, index }: ProjectsCardProps) {
                   return (
                     <div
                       key={index}
-                      className="bg-white rounded-md p-2 mr-2 h-10 w-10 flex items-center justify-center"
+                      className="bg-white rounded-md p-2 mr-2 h-9 w-9 flex items-center justify-center"
                     >
                       <Image
                         src={`/${element}.svg`}
                         alt={`${element} image`}
                         width="35"
                         height="35"
-                      ></Image>
+                      />
                     </div>
                   );
                 })}
@@ -55,10 +55,10 @@ function Card({ data, index }: ProjectsCardProps) {
               <Image
                 src={`/${image}`}
                 alt={`${image} image`}
-                width="120"
-                height="120"
-                className="rounded-2xl max-md:w-20 max-md:h-2w-20"
-              ></Image>
+                width="110"
+                height="110"
+                className="rounded-2xl max-md:w-[4.6rem] max-md:h-[4.6rem]"
+              />
             </div>
           </div>
         </div>

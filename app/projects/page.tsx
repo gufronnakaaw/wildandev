@@ -40,11 +40,11 @@ const data: ProjectsCardType[] = [
     link: 'https://short.wildandev.com',
   },
   {
-    heading: 'Permoment',
-    text: 'Personal Money Management.',
-    tech: ['js', 'reactjs', 'chakraui'],
-    image: 'permoment.png',
-    link: 'https://permoment.wildandev.com',
+    heading: 'Ponic',
+    text: 'Web Voting App.',
+    tech: ['js', 'nextjs', 'tailwind'],
+    image: 'ponic-api.svg',
+    link: 'https://ponic.site',
   },
   {
     heading: 'Ponic Backend',
@@ -52,6 +52,13 @@ const data: ProjectsCardType[] = [
     tech: ['ts', 'nodejs', 'fastify', 'supabase'],
     image: 'ponic-api.svg',
     link: 'https://github.com/gufronnakaaw/ponic-backend',
+  },
+  {
+    heading: 'Permoment',
+    text: 'Personal Money Management.',
+    tech: ['js', 'reactjs', 'chakraui'],
+    image: 'permoment.png',
+    link: 'https://permoment.wildandev.com',
   },
 ];
 
@@ -76,7 +83,7 @@ function Projects() {
         })}
 
         <Link href="https://github.com/gufronnakaaw" target="_blank">
-          <div className="mx-1">
+          <div className="mx-1 max-md:mx-0">
             <div className="w-full border-2 border-gray-100 hover:border-gray-200 my-3 rounded-2xl font-outfit py-4 font-bold hover:bg-gray-100 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-600 transition dark:text-gray-200 text-lg text-center">
               Other Projects
             </div>

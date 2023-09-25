@@ -49,7 +49,7 @@ const data: ProjectsCardType[] = [
   {
     heading: 'Ponic Backend',
     text: 'Backend Service for Voting App.',
-    tech: ['ts', 'nodejs', 'fastify', 'supabase'],
+    tech: ['ts', 'nodejs', 'fastify', 'neon'],
     image: 'ponic-api.svg',
     link: 'https://github.com/gufronnakaaw/ponic-backend',
   },

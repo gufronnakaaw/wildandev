@@ -44,7 +44,7 @@ const data: ProjectsCardType[] = [
     text: 'Web Voting App.',
     tech: ['js', 'nextjs', 'tailwind'],
     image: 'ponic-api.svg',
-    link: 'https://ponic.site',
+    link: 'http://ponic.site',
   },
   {
     heading: 'Ponic Backend',

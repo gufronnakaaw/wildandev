@@ -1,10 +1,11 @@
 'use client';
 
-import './globals.css';
-import { Outfit, Recursive } from 'next/font/google';
+import Floating from '@/components/Floating';
 import { ThemeProvider } from 'next-themes';
 import dynamic from 'next/dynamic';
-import Floating from '@/components/Floating';
+import { Outfit, Recursive } from 'next/font/google';
+import { usePathname } from 'next/navigation';
+import './globals.css';
 
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
   return (
     <html
       lang="en"
@@ -33,9 +35,9 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider attribute="class">
-          <Navbar />
+          {pathname !== '/links' ? <Navbar /> : null}
           {children}
-          <Floating />
+          {pathname !== '/links' ? <Floating /> : null}
         </ThemeProvider>
       </body>
     </html>

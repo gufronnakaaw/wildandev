@@ -1,6 +1,6 @@
+import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { FiMoon, FiSun } from 'react-icons/fi';
-import { useTheme } from 'next-themes';
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -12,7 +12,7 @@ function Navbar() {
           href="/"
           className="font-outfit text-black text-lg font-semibold dark:text-gray-200"
         >
-          wildandev.com
+          wildandev
         </Link>
       </div>
       <div className="right font-recursive items-center flex text-sm dark:text-gray-200">

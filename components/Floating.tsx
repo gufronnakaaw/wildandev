@@ -1,12 +1,12 @@
-import { FiUser, FiCode, FiFolder, FiHome } from 'react-icons/fi';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FiCode, FiFolder, FiHome, FiUser } from 'react-icons/fi';
 
 function Floating() {
   const pathname = usePathname();
 
   return (
-    <section className="md:hidden max-md:fixed max-md:bottom-0 max-md:w-full">
+    <section className="fixed bottom-0 w-full md:hidden">
       <div className="w-full flex justify-around bg-gray-100 py-3 dark:bg-gray-700 dark:text-gray-300">
         <Link
           href="/"

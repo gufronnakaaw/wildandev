@@ -1,8 +1,7 @@
 'use client';
 
-import { FiArrowRight } from 'react-icons/fi';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 function AboutMe() {
   return (
@@ -56,8 +55,8 @@ function AboutMe() {
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.9, delay: 1 }}
       >
-        <Link href="https://links.wildandev.com" target="_blank">
-          <button className="border-gray-400 transition border-2 rounded-lg font-bold hover:bg-gray-100 p-4 font-outfit mt-5 dark:text-gray-200 dark:hover:bg-gray-500">
+        <Link href="/links">
+          <button className="border-gray-400 transition border-2 rounded-lg font-bold hover:bg-gray-100 p-4 font-outfit mt-5 dark:text-gray-200 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-500">
             Connect with me
           </button>
         </Link>

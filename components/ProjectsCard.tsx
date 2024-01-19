@@ -55,9 +55,9 @@ function Card({ data, index }: ProjectsCardProps) {
               <Image
                 src={`/${image}`}
                 alt={`${image} image`}
-                width="110"
-                height="110"
-                className="rounded-2xl max-md:w-[4.6rem] max-md:h-[4.6rem]"
+                width="100"
+                height="100"
+                className="rounded-2xl md:w-[5rem] md:h-[5rem]"
               />
             </div>
           </div>

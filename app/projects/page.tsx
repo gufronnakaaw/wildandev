@@ -35,7 +35,7 @@ const data: ProjectsCardType[] = [
   {
     heading: 'SHORT!',
     text: 'Simple URL shortener.',
-    tech: ['js', 'nextjs', 'css', 'supabase'],
+    tech: ['js', 'nextjs', 'supabase'],
     image: 'short.jpg',
     link: 'https://short.wildandev.tech',
   },
@@ -49,7 +49,7 @@ const data: ProjectsCardType[] = [
   {
     heading: 'Ponic Backend',
     text: 'Backend Service for Voting App.',
-    tech: ['ts', 'nodejs', 'fastify', 'neon'],
+    tech: ['ts', 'nodejs', 'fastify'],
     image: 'ponic-api.svg',
     link: 'https://github.com/gufronnakaaw/ponic-backend',
   },

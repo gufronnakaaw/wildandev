@@ -1,6 +1,7 @@
 'use client';
 
 import Floating from '@/components/Floating';
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from 'next-themes';
 import dynamic from 'next/dynamic';
 import { Outfit, Recursive } from 'next/font/google';
@@ -39,6 +40,7 @@ export default function RootLayout({
           {children}
           {pathname !== '/links' ? <Floating /> : null}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

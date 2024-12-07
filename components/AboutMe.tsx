@@ -23,7 +23,7 @@ function AboutMe() {
           transition={{ duration: 0.3, delay: 0.4 }}
         >
           <p className="font-recursive text-md mt-5 dark:text-gray-200">
-            I&apos;m Wildan, backend web developer with one year work experience
+            I&apos;m Wildan, backend web developer with two years work experience
             and loves helping people learn how to code. Sometimes, I work with{' '}
             <b>PHP</b> or <b>JavaScript</b> and a bit of <b>TypeScript</b>.
           </p>

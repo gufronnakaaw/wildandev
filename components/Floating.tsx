@@ -1,52 +1,64 @@
+'use client';
+
+import { FolderIcon, MonitorIcon, UserIcon } from "@phosphor-icons/react";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FiCode, FiFolder, FiHome, FiUser } from 'react-icons/fi';
 
-function Floating() {
+export default function Floating() {
   const pathname = usePathname();
 
   return (
     <section className="fixed bottom-0 w-full md:hidden">
-      <div className="w-full flex justify-around bg-gray-100 py-3 dark:bg-gray-700 dark:text-gray-300">
+      <div className="w-full flex justify-around bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm border-t border-gray-100 dark:border-gray-700 py-3 px-4">
         <Link
           href="/"
           className={`${
-            pathname == '/' ? 'text-white' : null
-          } flex flex-col items-center`}
+            pathname === '/' 
+              ? 'text-gray-200 dark:text-gray-200' 
+              : 'text-gray-500 dark:text-gray-400'
+          } flex flex-col items-center py-2 px-3 transition-all duration-300 hover:text-gray-700`}
         >
-          <FiHome size="21"></FiHome>
-          <p className="text-xs font-outfit">Home</p>
+          <MonitorIcon size="20" />
+          <p className="text-xs font-outfit mt-1">Home</p>
         </Link>
+        
         <Link
           href="/projects"
           className={`${
-            pathname == '/projects' ? 'text-white' : null
-          } flex flex-col items-center`}
+            pathname === '/projects' 
+              ? 'text-gray-200 dark:text-gray-200' 
+              : 'text-gray-500 dark:text-gray-400'
+          } flex flex-col items-center py-2 px-3 transition-all duration-300 hover:text-gray-700`}
         >
-          <FiFolder size="21"></FiFolder>
-          <p className="text-xs font-outfit">Projects</p>
+          <FolderIcon size="20" />
+          <p className="text-xs font-outfit mt-1">Projects</p>
         </Link>
-        <Link
-          href="/skills"
-          className={`${
-            pathname == '/skills' ? 'text-white' : null
-          } flex flex-col items-center`}
-        >
-          <FiCode size="21"></FiCode>
-          <p className="text-xs font-outfit">Skills</p>
-        </Link>
+        
+        
         <Link
           href="/me"
           className={`${
-            pathname == '/me' ? 'text-white' : null
-          } flex flex-col items-center`}
+            pathname === '/me' 
+              ? 'text-gray-200 dark:text-gray-200' 
+              : 'text-gray-500 dark:text-gray-400'
+          } flex flex-col items-center py-2 px-3 transition-all duration-300 hover:text-gray-700`}
         >
-          <FiUser size="21"></FiUser>
-          <p className="text-xs font-outfit">Me</p>
+          <UserIcon size="20" />
+          <p className="text-xs font-outfit mt-1">Me</p>
+        </Link>
+        
+        <Link
+          href="/photos"
+          className={`${
+            pathname === '/photos' 
+              ? 'text-gray-200 dark:text-gray-200' 
+              : 'text-gray-500 dark:text-gray-400'
+          } flex flex-col items-center py-2 px-3 transition-all duration-300 hover:text-gray-700`}
+        >
+          <UserIcon size="20" />
+          <p className="text-xs font-outfit mt-1">Photos</p>
         </Link>
       </div>
     </section>
   );
 }
-
-export default Floating;

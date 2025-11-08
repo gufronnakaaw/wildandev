@@ -1,14 +1,13 @@
 'use client';
 
 import Floating from '@/components/Floating';
+import Navbar from '@/components/Navbar';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from 'next-themes';
-import dynamic from 'next/dynamic';
 import { Outfit, Recursive } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import './globals.css';
 
-const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false });
 
 const outfit = Outfit({
   subsets: ['latin'],

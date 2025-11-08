@@ -3,13 +3,10 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  FaCertificate,
   FaEnvelope,
   FaGithub,
-  FaInstagram,
   FaLinkedin,
-  FaSpotify,
-  FaUser,
+  FaUser
 } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -25,7 +22,7 @@ type ContentType = {
 const links: ContentType[] = [
   {
     title: 'website',
-    url: 'https://wildandev.tech',
+    url: `https://${process.env.NEXT_PUBLIC_PROJECT_NAME}${process.env.NEXT_PUBLIC_DOMAIN_NAME}`,
     icon: <FaUser className="w-5 h-5 dark:text-gray-200" />,
   },
   {
@@ -42,23 +39,6 @@ const links: ContentType[] = [
     title: 'email',
     url: 'mailto: gufronnakaaw@gmail.com',
     icon: <FaEnvelope className="w-5 h-5 dark:text-gray-200" />,
-  },
-  {
-    title: 'e-certificates',
-    url: 'https://drive.google.com/drive/folders/1XJ-UMKjM37lEzyC6dSOnUzGvYT3aMNKv?usp=sharing',
-    icon: <FaCertificate className="w-5 h-5 dark:text-gray-200" />,
-  },
-];
-const socials: ContentType[] = [
-  {
-    title: 'spotify',
-    url: 'https://open.spotify.com/user/gufron02?si=fe6c871608a24ce3',
-    icon: <FaSpotify className="w-5 h-5 dark:text-gray-200" />,
-  },
-  {
-    title: 'instagram',
-    url: 'https://instagram.com/gufronnakaaw',
-    icon: <FaInstagram className="w-5 h-5 dark:text-gray-200" />,
   },
 ];
 
@@ -104,28 +84,10 @@ export default function Links() {
             );
           })}
         </div>
-
-        <div className="flex justify-center gap-1">
-          {socials.map((social, index) => {
-            return (
-              <Tooltip
-                content={`${social.title}`}
-                key={index}
-                className="font-outfit"
-              >
-                <Link href={social.url} target="_blank">
-                  <IconButton variant="text" className="dark:hover:bg-gray-500">
-                    {social.icon}
-                  </IconButton>
-                </Link>
-              </Tooltip>
-            );
-          })}
-        </div>
       </div>
       <footer className="font-outfit absolute bottom-3 dark:text-gray-200">
         <small>
-          Built by <span>wildandev.tech</span>
+          Built by <span>{`${process.env.NEXT_PUBLIC_PROJECT_NAME}${process.env.NEXT_PUBLIC_DOMAIN_NAME}`}</span>
         </small>
       </footer>
     </div>

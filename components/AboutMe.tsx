@@ -23,7 +23,7 @@ function AboutMe() {
           transition={{ duration: 0.3, delay: 0.4 }}
         >
           <p className="font-recursive text-md mt-5 dark:text-gray-200">
-            I&apos;m Wildan, backend web developer with two years work experience
+            I&apos;m Wildan, backend web developer with three years work experience
             and loves helping people learn how to code. Sometimes, I work with{' '}
             <b>PHP</b> or <b>JavaScript</b> and a bit of <b>TypeScript</b>.
           </p>
@@ -56,7 +56,7 @@ function AboutMe() {
         transition={{ duration: 0.9, delay: 1 }}
       >
         <Link href="/links">
-          <button className="border-gray-400 transition border-2 rounded-lg font-bold hover:bg-gray-100 p-4 font-outfit mt-5 dark:text-gray-200 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-500">
+          <button className="bg-white/50 dark:bg-gray-800 border border-gray-200 dark:border-gray-400 rounded-xl px-6 py-3 font-outfit font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 hover:border-gray-300 dark:hover:border-gray-400 transition-all duration-300 shadow-sm hover:shadow-md mt-5">
             Connect with me
           </button>
         </Link>

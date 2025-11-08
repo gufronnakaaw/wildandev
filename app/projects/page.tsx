@@ -2,12 +2,11 @@ import Container from '@/components/Container';
 import Footer from '@/components/Footer';
 import ProjectsCard from '@/components/ProjectsCard';
 import type { ProjectsCardType } from '@/types';
-import chunk from '@/utils/chunk';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Projects - Gufronnaka Arif Wildan',
+  title: 'Projects - Wildan Workspace',
 };
 
 const data: ProjectsCardType[] = [
@@ -63,32 +62,31 @@ const data: ProjectsCardType[] = [
 ];
 
 function Projects() {
-  const results = chunk<ProjectsCardType>(data, 2);
-  let current: number = 0;
-
   return (
     <>
       <Container heading="Projects" text="I've some fun personal projects.">
-        {results.map((result, index) => {
-          return (
-            <div key={index} className="flex flex-col 2xl:flex-row">
-              {result.map((element, key) => {
-                current += 1;
-                return (
-                  <ProjectsCard key={key} data={element} index={current} />
-                );
-              })}
-            </div>
-          );
-        })}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          {data.map((project, index) => (
+            <ProjectsCard key={index} data={project} index={index + 1} />
+          ))}
+        </div>
 
-        <Link href="https://github.com/gufronnakaaw" target="_blank">
-          <div className="mx-1 max-md:mx-0">
-            <div className="w-full border-2 border-gray-100 hover:border-gray-200 my-3 rounded-2xl font-outfit py-4 font-bold hover:bg-gray-100 dark:border-gray-500 dark:hover:border-gray-400 dark:hover:bg-gray-500 transition dark:text-gray-200 text-lg text-center">
-              Other Projects
+        <div className="flex justify-center">
+          <Link 
+            href="https://github.com/gufronnakaaw" 
+            target="_blank"
+            className="group"
+          >
+            <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-400 rounded-xl px-8 py-4 font-outfit font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 hover:border-gray-300 dark:hover:border-gray-400 transition-all duration-300 shadow-sm hover:shadow-md">
+              <span className="flex items-center gap-2">
+                View More Projects
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </Container>
       <Footer />
     </>
